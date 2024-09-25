@@ -25,7 +25,7 @@ def mix(lst: list) -> list:
 
     return ret_lst
 
-def isTrulySorted(lst: list) -> bool:
+def is_truly_sorted(lst: list) -> bool:
     """
     Checks if a list is sorted (low to high), no doubles
     :param lst: list (only int/flt)
