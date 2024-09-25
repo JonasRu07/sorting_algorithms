@@ -24,3 +24,14 @@ def mix(lst: list) -> list:
         ret_lst.append(lst.pop(rnd.randint(0, len(lst) - 1)))
 
     return ret_lst
+
+def isTrulySorted(lst: list) -> bool:
+    """
+    Checks if a list is sorted (low to high), no doubles
+    :param lst: list (only int/flt)
+    :return: boolean
+    """
+    for i in range(1, len(lst)):
+        if lst[i] <= lst[i-1]:
+            return False
+    return True
