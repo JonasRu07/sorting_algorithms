@@ -1,3 +1,5 @@
+import random as rnd
+
 def ord_list(starting_value: int, length: int) -> list:
     """
     Creates am ordered list with a given length, beginning at a given value
