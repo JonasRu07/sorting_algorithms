@@ -16,3 +16,13 @@ def selection(lst: list):
         lst.remove(element)
         lst = lst[:i] + [element] + lst[i:]
     return lst
+
+def bubble(lst: list) -> list:
+    for i in range(1, len(lst)-1):
+        for j in range(len(lst) - i):
+            if lst[j] > lst[j + 1]:
+                lst[j], lst[j+1] = lst[j+1], lst[j]
+    return lst
+
+list_ = [2,5,4,8,7,9,3,1,6]
+print(bubble(list_))
